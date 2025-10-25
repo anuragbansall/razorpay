@@ -40,7 +40,7 @@ function App() {
           <h2 className="text-lg font-semibold">{product.title}</h2>
           <p className="text-gray-600">{product.description}</p>
           <p className="text-gray-800 font-bold">
-            {product.price.amount} {product.price.currency}
+            {(product.price.amount / 100).toFixed(2)} {product.price.currency}
           </p>
 
           <button className="mt-4 w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600">

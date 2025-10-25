@@ -34,6 +34,9 @@ function App() {
           name: "My Store",
           description: "Test Transaction",
           order_id: order.id,
+          theme: {
+            color: "#f04646ff",
+          },
           handler: async function (response) {
             console.log("Payment successful:", response);
             const {
